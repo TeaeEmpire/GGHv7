@@ -1,0 +1,49 @@
+name: "Казарма 1"
+description: "Базовая подготовка солдат."
+type: UnitFactory
+size: 3
+consumes: {
+  power: 2
+}
+plans: [
+  {
+    unit:bleck-r
+    requirements: [
+      silicon/50
+	  bleck/60
+    ] 
+    time: 700
+  }
+{
+    unit:bleck-p
+    requirements: [
+      silicon/35
+	  bleck/20
+    ] 
+    time: 650 
+  }
+{
+    unit:bleck-k
+    requirements: [
+      silicon/20
+	  bleck/80
+    ] 
+    time: 600 
+  }
+{
+    unit:bleck-s
+    requirements: [
+      silicon/15
+	  bleck/10
+    ] 
+    time: 550 
+  }
+]
+requirements: [
+  copper/50
+  lead/140
+  silicon/70
+  bleck/160
+]
+category: units
+research: ground-factory

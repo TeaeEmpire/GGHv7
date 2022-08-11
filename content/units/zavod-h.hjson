@@ -1,0 +1,55 @@
+type: legs
+name: Завод на ножках.
+description:Строит почти всех юнитов Т1.
+speed: 2.0
+hitSize: 20
+rotateSpeed: 3
+allowLegStep: true
+canDrown: false
+health: 3000
+range: 100
+commandLimit: 32
+armor:4
+groundLayer: 50
+itemCapacity: 120
+research: {
+parent: mediumzavod
+requirements: [
+      copper/15000
+      lead/15600
+      silicon/11000
+      graphite/13000
+      metaglass/12000
+	  titanium/5000
+	]
+}
+legCount: 7
+legLength: 25
+legTrns: 1.0
+legMoveSpace: 1.
+legBaseOffset: 1
+hovering: false
+buildSpeed: 0.70
+abilities: [
+{
+type: UnitSpawnAbility
+unit: nova
+spawnTime: 1200
+spawnX: 6.5 
+spawnY: 6.5 
+}
+{
+type: UnitSpawnAbility
+unit: dagger
+spawnTime: 900 
+spawnX: -6.5 
+spawnY: 6.5 
+}
+{
+type: UnitSpawnAbility
+unit: flare
+spawnTime: 700 
+spawnX: 0.0
+spawnY: -5.5
+}
+]

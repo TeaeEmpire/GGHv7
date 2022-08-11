@@ -1,0 +1,75 @@
+type: mech
+name: Снайпер
+description: Прекрасный стрелок на дальние дистанции.
+health: 1100
+hitSize: 20
+rotateSpeed: 10
+
+canDrown: false
+commandLimit: 3
+armor:5
+range: 300
+itemCapacity: 40
+speed: 1.2
+research: {
+parent: gryn-k
+requirements: [
+	silicon/19500
+  graphite/19000
+    metaglass/19500
+    titanium/14500
+    esinii/13500
+	]
+}
+weapons: [
+{
+  name: esinii-k-weapon
+  x: 11
+  y: 1
+  shootY: 0
+shootX: 0
+  mirror: true
+  reload: 70
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+pierceCap:100
+  shootSound: flame
+ bullet: {
+type: basicBulletType
+width: 10
+height: 20
+shrinkY: 0
+splashDamageRadius: 12
+splashDamage: 95
+damage: 350
+speed: 8
+lifetime: 58
+}
+}
+{
+  name: esinii-kk-weapon
+  x: 8
+  y: -1
+  shootY: 0
+shootX: 0
+  mirror: true
+  reload: 20
+  ejectEffect: none
+  recoil: 1
+  rotate: true
+pierceCap:10
+  shootSound: flame
+ bullet: {
+type: basicBulletType
+width: 5
+height: 10
+shrinkY: 0
+splashDamageRadius: 12
+splashDamage: 20
+speed: 7
+damage: 70
+lifetime: 65
+}
+}
+]

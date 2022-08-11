@@ -1,0 +1,28 @@
+type: genericCrafter
+name: "Дробитель."
+description: "Создает из камня очень мелкий порошок похожий на пыль."
+outputItem: pil/4
+itemCapacity: 30
+size: 1
+hasItem: true
+craftTime: 60
+health: 20
+consumes: {
+ items: {
+  items: [
+   stone/1
+   ]
+   }
+ liquid:{
+ liquid:water
+ amount: 0.05
+ }
+}
+requirements: [
+ stone/30
+pilin/40
+]
+category: production
+research: factory-pilen
+idleSound: respawning
+idleSoundVolume: 0.5

@@ -1,0 +1,43 @@
+{
+type: GenericCrafter
+name: "Синтезатор глины."
+description: "Синтезирует глину."
+outputItem: glina/2
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 2
+hasPower: true
+hasItem: true
+craftTime: 60
+health: 750
+updateEffect: smeltsmoke
+consumes: {
+power: 2.5
+ items: {
+  items: [
+   pil/5
+   sand/7
+  
+  ],
+ }
+}
+requirements: [
+ lead/60 
+ copper/80
+ silicon/40
+ graphite/20
+],
+category: crafting
+research: cultivator
+idleSound: respawning
+idleSoundVolume: 0.5
+}

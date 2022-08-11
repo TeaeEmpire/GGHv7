@@ -1,0 +1,10 @@
+name: "Шлак90"
+ description:"Шлак с меньшей температурой который может выделять графит и кремень."
+viscosity: 0.5
+temperature: 0.9
+effect: melting
+color: "#CD853F"
+lightColor: "#CD853F"
+research:{
+parent:slag1
+}

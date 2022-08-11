@@ -1,0 +1,31 @@
+{
+type: GenericCrafter
+name: "Услиленная угольная центрифуга"
+description: "Больше угля-больше графита-больше взрывателей... 5.0 "
+outputItem: coal/4
+size: 3
+hasPower: true
+hasItem: true
+craftTime: 60
+health: 1200
+updateEffect: smeltsmoke
+consumes: {
+power: 1.25
+ liquid:{
+ liquid:oil
+ amount: 0.3
+ }
+}
+requirements: [
+ lead/220 
+ silicon/120
+graphite/90
+plastanium/25
+titanium/120
+
+],
+category: crafting
+research: plastanium-compressor
+idleSound: respawning
+idleSoundVolume: 0.5
+}

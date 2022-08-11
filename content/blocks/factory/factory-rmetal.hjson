@@ -1,0 +1,37 @@
+type: genericCrafter
+name: "Ситечко"
+description: "Ищет металлолом в песке"
+outputItem: scrap/1
+drawer: {
+type: DrawMulti
+drawers: 
+[
+DrawDefault, 
+{
+type: DrawRegion
+suffix: "-rotator"
+spinSprite: true
+rotateSpeed: 5
+}
+] 
+}
+size: 1
+itemCapacity: 10
+hasItem: true
+craftTime: 60
+health: 300
+consumes: {
+ items: {
+  items: [
+   sand/1
+  ]
+ }
+}
+requirements: [
+ stone/10
+ pilin/20
+],
+category: crafting
+research: factory-pilin
+idleSound: respawning
+idleSoundVolume: 0.5

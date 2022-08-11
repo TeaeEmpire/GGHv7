@@ -1,0 +1,64 @@
+name: "Мультизавод по технике"
+description: "Производит различную технику."
+type: UnitFactory
+size: 15
+consumes: {
+  power: 50
+}
+plans: [
+  {
+    unit:tonk
+    requirements: [
+      silicon/1700
+	  titanium/1300
+	  copper/1600
+	  lead/1600
+	  tin/1150
+	  metaglass/1100
+	  graphite/1140
+    ] 
+    time: 6000
+  }
+  {
+    unit:tonkA
+    requirements: [
+      silicon/700
+	  titanium/300
+	  thorium/1400
+	  copper/1300
+	  lead/1350
+	  graphite/1400
+	  metaglass/1000
+	  
+    ] 
+    time: 4500
+  }
+  {
+    unit:tonk11
+    requirements: [
+      silicon/2700
+	  titanium/2600
+	  copper/4500
+	  lead/3500
+	  tin/1500
+	  graphite/5600
+	  metaglass/500
+	  phase-fabric/140
+      surge-alloy/280
+    ] 
+    time: 18000
+  }
+]
+requirements: [
+  copper/4700
+  lead/6300
+  silicon/2200
+  titanium/3500
+  graphite/2900
+  thorium/1900
+  phase-fabric/1400
+  surge-alloy/2800
+]
+category: units
+researchCostMultiplier: 0.3
+research: mediumzavod

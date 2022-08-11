@@ -1,0 +1,42 @@
+name: "Казарма 4"
+description: "Прекрасная подготовка Машин для защиты и нападения."
+type: Reconstructor
+size: 5
+time: 2000 
+consumes: {
+  power: 3
+  items: {
+    items: [
+    silicon/860
+    graphite/790
+    metaglass/500
+    titanium/680
+    esinii/200
+    ]
+  }
+}
+upgrades: [
+  [
+      gryn-k, esinii-k
+  ]
+  [
+     gryn-p, esinii-p
+  ]
+  [
+      gryn-s, esinii-s
+  ]
+  [
+      gryn-r, esinii-r
+  ]
+]
+requirements: [
+  copper/530
+  lead/640
+  metaglass/420
+  titanium/460
+  plastanium/300
+  silicon/650
+  esinii/180
+]
+category: units
+research: unit-tea3

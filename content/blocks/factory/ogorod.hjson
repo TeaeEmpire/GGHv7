@@ -1,0 +1,55 @@
+type: separator
+name: "Теплица"
+description: "Растит почти все виды чая."
+size: 5
+health: 4500
+hasLiquids: true
+hasItems: true
+liquidCapacity: 600
+craftTime: 30
+drawer: {
+type: DrawMulti
+drawers: 
+[
+DrawDefault, 
+{
+type: DrawRegion
+suffix: "-welwe"
+spinSprite: false
+rotateSpeed: 0
+}
+] 
+}
+consumes:
+{
+power:8.5
+items: {
+  items: [
+   azot/1
+fosfor/1
+   ]
+   }
+ liquid:{
+ liquid:water
+ amount: 0.1
+ }
+
+}
+results:[
+bleck/35
+elov/25
+gryn/20
+esinii/15
+malin/1
+	]
+requirements: [
+titanium/150
+silicon/150
+metaglass/350
+spore-pod/140
+ semla/180
+]
+research: planta
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.5

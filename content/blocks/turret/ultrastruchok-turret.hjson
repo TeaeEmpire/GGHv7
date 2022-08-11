@@ -1,0 +1,193 @@
+  {
+  type: ItemTurret
+    name: "Малиновая турель"
+    description: "Жахает больно но и стоит дорого. Особенно когда ей управляет Павел."
+    health: 9544
+    size: 4
+    recoil: 5
+	fragBullets: 5
+    reloadTime: 60
+    range: 800
+    shots:4
+   targetAir: false
+    inaccuracy: 5
+    rotateSpeed: 2
+    ammoTypes: {
+        bleck: {
+            speed: 6.0
+            reloadMultiplier: 1.0
+             width: 20
+             height: 20
+        type: ArtilleryBulletType
+         bulletSprite: ggh-strupul
+     smokeEffect: shootBigSmoke    
+            ammoMultiplier: 4
+            backColor: C67449
+            frontColor: C67449
+			knockback:1
+            splashDamageRadius: 40
+            splashDamage: 140
+			fragBullets: 2
+			fragBullet: {
+type: BasicBulletType
+damage: 20
+speed: 4
+lifetime: 70
+drag: 0.03
+incendAmount: 3
+incendSpread: 3
+incendChance: 5
+width: 10
+height: 10
+backColor: FFCCAA
+frontColor: FFCCAA
+pierce: true
+homingPower: 0.1
+}
+        }
+elov: {
+            speed: 6.0
+            reloadMultiplier: 1.0
+             width: 20
+             height: 20
+ type: ArtilleryBulletType
+ knockback:2
+     smokeEffect: shootBigSmoke
+            ammoMultiplier: 6
+            backColor: F4BC60
+            frontColor: F4BC60
+            splashDamageRadius: 50
+            splashDamage: 180
+			fragBullets: 3
+			fragBullet: {
+type: BasicBulletType
+damage: 40
+speed: 4
+lifetime: 70
+drag: 0.03
+width: 10
+height: 10
+incendAmount: 5
+incendSpread: 5
+incendChance: 5
+backColor: FCE2B3
+frontColor: FCE2B3
+pierce: true
+homingPower: 0.15
+}
+        }
+gryn: {
+            speed: 6.0
+            lifetime: 300
+            incondiary:100
+			knockback:2.5
+            reloadMultiplier: 1.0
+             width: 20
+             height: 20
+        type: ArtilleryBulletType
+         bulletSprite: ggh-strupul
+     smokeEffect: shootBigSmoke    
+            ammoMultiplier: 4
+            backColor: CFC776
+            frontColor: CFC776
+            splashDamageRadius: 60
+            splashDamage: 220
+			fragBullets: 4
+			fragBullet: {
+type: BasicBulletType
+damage: 60
+speed: 4
+lifetime: 70
+drag: 0.03
+incendAmount: 10
+incendSpread: 5
+incendChance: 5
+width: 10
+height: 10
+backColor: B1E08B
+frontColor: B1E08B
+pierce: true
+homingPower: 0.2
+        }
+		}
+esinii: {
+            speed: 6.0  
+            reloadMultiplier: 1.0
+             width: 20
+			 knockback:3
+             height: 20
+        type: ArtilleryBulletType
+         bulletSprite: ggh-strupul
+     smokeEffect: shootBigSmoke    
+            ammoMultiplier: 10
+            backColor: 9C85AD
+            frontColor: 9C85AD
+            splashDamageRadius: 70
+            splashDamage: 280
+			lightning: 4
+            lightningDamage: 60
+            lightningLength: 5
+            lightningLengthRand: 5
+			fragBullets: 4
+			fragBullet: {
+type: BasicBulletType
+damage: 90
+speed: 4
+lifetime: 70
+drag: 0.03
+width: 10
+height: 10
+backColor: D4BAE2
+frontColor: D4BAE2
+pierce: true
+homingPower: 0.25
+incendAmount: 15
+incendSpread: 10
+incendChance: 10
+        }
+		}
+malin: {
+            speed: 6.0
+            damage: 2000
+            reloadMultiplier: 1.0
+             width: 20
+			 knockback:4
+             height: 20
+        type: ArtilleryBulletType
+         bulletSprite: ggh-strupul
+     smokeEffect: shootBigSmoke    
+            ammoMultiplier: 10
+			lightning: 4
+            lightningDamage: 60
+            lightningLength: 5
+            lightningLengthRand: 5
+            frag:10
+            backColor: FCB2AD
+            frontColor: FCB2AD
+            splashDamageRadius: 80
+            splashDamage: 366
+			fragBullets: 6
+			fragBullet: {
+type: BasicBulletType
+damage: 66
+speed: 4
+lifetime: 70
+drag: 0.03
+width: 10
+height: 10
+backColor: F9DDDB
+frontColor: F9DDDB
+pierce: true
+incendAmount: 20
+incendSpread: 15
+incendChance: 10
+homingPower: 0.3
+        }
+    }
+	}
+    requirements: [
+       malin/160
+    ]
+    category: turret
+    research: motira-turret
+	}

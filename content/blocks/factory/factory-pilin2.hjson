@@ -1,0 +1,30 @@
+type: genericCrafter
+name: "Завод раствора"
+description: "Делат раствор из воды и пыли эффективнее."
+outputItem: pilin/5
+itemCapacity: 60
+size: 2
+hasItem: true
+craftTime: 90
+health: 400
+consumes: {
+ power: 0.30
+ items: {
+  items: [
+   pil/7
+   ]
+   }
+  liquid:{
+ liquid:water
+ amount: 0.5
+ }
+}
+requirements: [
+ stone/150
+ copper/60
+ pilin/50
+]
+category: crafting
+research: factory-pilen
+idleSound: respawning
+idleSoundVolume: 0.5

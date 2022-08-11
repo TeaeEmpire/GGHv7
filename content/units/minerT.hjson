@@ -1,0 +1,22 @@
+type: flying
+flying: true
+name: ШахтерТ2
+description: Улучшенная версия обычного шахтера с лазерным буром .
+details: для использования поставьте схему "miner"
+speed: 3.8
+hitsize: 5
+rotateSpeed: 5
+mineTier: 4
+mineSpeed: 3.5
+health: 150
+commandLimit: 4
+armor:0
+itemCapacity: 30
+research: {
+parent: miner
+requirements: [
+	silicon/7500
+    graphite/3500
+    titanium/5000
+	]
+}

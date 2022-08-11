@@ -1,0 +1,48 @@
+type: mech
+name: Разбойник
+description: Отличный стрелок
+health: 550
+hitSize: 15
+rotateSpeed: 10
+commandLimit: 3
+canDrown: false
+
+armor:4
+range: 200
+itemCapacity: 40
+speed: 1.1
+research: {
+parent: elov-k
+requirements: [
+    silicon/13500
+    metaglass/7500
+    graphite/12800
+    gryn/7980
+	]
+}
+weapons: [
+{
+  name: gryn-k-weapon
+  x: 8
+  y: 1
+  shootY: 0
+shootX: 0
+  mirror: true
+  reload: 50
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+pierceCap:10
+  shootSound: flame
+ bullet: {
+type: basicBulletType
+width: 3
+height: 4
+shrinkY: 0
+splashDamageRadius: 12
+splashDamage: 95
+speed: 8
+damage: 350
+lifetime: 60
+}
+}]

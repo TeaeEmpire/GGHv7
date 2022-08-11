@@ -1,0 +1,31 @@
+name: "Плавильня2 "
+description: "Делает металлы из шлака."
+type: separator
+size: 2
+health: 160
+hasPower: true
+hasLiquids: true
+hasItems: true
+liquidCapacity: 60
+craftTime: 35
+consumes:
+{
+power: 1.1
+ liquid:{
+ liquid:slag2
+ amount: 0.015
+ }
+}
+results:[
+	graphite/10
+	silicon/10
+titanium/1
+	]
+requirements: [
+	copper/75
+	lead/75
+]
+research: factory-slag2
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.5

@@ -1,0 +1,43 @@
+{
+    type: itemTurret
+    name: "Зелёно-чайная пушка"
+    description: "Мощная пушка, только скорострельность не её конёк."
+    health: 1200
+    size: 3
+    recoil: 5
+shots:1
+    reloadTime: 70
+    range: 250
+    
+    inaccuracy: 1
+    rotateSpeed: 3.0
+    ammoTypes: {
+            gryn: {
+            speed: 15.0
+            damage: 220
+            reloadMultiplier: 1.0
+             width: 5
+             height: 15
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            splashDamageRadius: 80
+            splashDamage: 100
+            ammoMultiplier: 2
+            backColor: EAC300
+            frontColor: CFC776
+			lifetime: 16
+			incendAmount: 6
+			incendSpread: 6
+			incendChance: 6
+        }
+    }
+    requirements: [
+gryn/50
+copper/65
+lead/85
+graphite/40
+silicon/30
+    ]
+    category: turret
+    research: large-bleck-turret
+}

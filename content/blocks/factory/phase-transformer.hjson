@@ -1,0 +1,49 @@
+type: genericCrafter
+name: "Завод фазки"
+description: "Усиленная версия завода фазовой ткани. Требует воду для охлаждения"
+craftEffect: smeltsmoke
+craftTime: 60
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+suffix: "-bottom"
+}
+{
+type:  DrawWeave
+}
+{
+type: DrawRegion
+}
+]
+}
+category: crafting
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 40
+liquidCapacity: 40
+consumes: {
+	items: {
+		items: [
+			thorium/4
+			sand/16
+		]
+	}
+	liquid: {
+		liquid: water
+		amount: 0.07777
+	}
+	power: 8
+}
+outputItem: phase-fabric/2
+requirements: [
+	
+	silicon/230
+	surge-alloy/65
+	lead/280
+	thorium/250
+]
+research: phase-weaver

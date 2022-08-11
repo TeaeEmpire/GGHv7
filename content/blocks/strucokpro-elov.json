@@ -1,0 +1,26 @@
+name: Жёлто-чайный ремонтный регенератор.
+description: Ремонтирует все в радиусе 25 блоков.
+type: MendProjector
+health: 1200
+phaseRadiusBoost: 10
+size: 3
+reload: 10
+healPercent: 1
+range: 200
+consumes: {
+  power: 4
+items: {
+items: [elov/1
+]
+booster: true
+
+}
+}
+requirements: [
+silicon/180
+titanium/120
+plastanium/60
+elov/200
+ ]
+category: effect
+research: strucokpro-bleck

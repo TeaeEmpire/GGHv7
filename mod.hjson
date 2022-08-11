@@ -1,0 +1,9 @@
+{
+          name: GGH2.1
+          displayName: GGH2.4
+          description: За чай, товарищи!
+          author: TeaGryn
+          version: 2.4
+          minGameVersion: 136
+           main: MultiCrafterAdapter
+}

@@ -1,0 +1,44 @@
+type:  AttributeCrafter
+name: "Ферма стручков"
+description: "Для нефти и бесжалосного сжигания."
+outputItem: spore-pod/6
+itemCapacity: 30
+size: 3
+attribute: spores
+drawer: {
+type: DrawMulti
+drawers: 
+[
+{
+type: DrawDefault
+suffix: "-bottom"
+}
+DrawCultivator, 
+{
+type: DrawRegion
+suffix: "-top"
+}
+] 
+}
+hasPower: true
+hasItem: true
+craftTime: 30
+health: 1200
+consumes: {
+ power: 5.0
+  liquid:{
+ liquid:water
+ amount: 1
+ }
+}
+requirements: [
+ lead/120
+ copper/160
+ spore-pod/40
+ silicon/170
+ 
+],
+category: production
+research: cultivator
+idleSound: respawning
+idleSoundVolume: 0.5

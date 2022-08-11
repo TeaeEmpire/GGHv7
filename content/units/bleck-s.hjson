@@ -1,0 +1,48 @@
+type: mech
+name: Строитель.
+description: Для своей цены строит быстро.
+health: 210
+speed: 1.0
+range: 1
+hitSize: 10
+canDrown: false
+rotateSpeed: 5
+commandLimit: 4
+buildSpeed: 4.0
+armor:0
+itemCapacity: 0
+
+speed: 1
+research: {
+parent: unit-tea
+requirements: [
+      silicon/1000
+	  bleck/1100
+	  ]
+}
+weapons: [
+{
+  name: bleck-s-weapon
+  x: 0
+  y: 0
+  shootY: 3
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+instantDisappear: true
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 20
+speed: 1
+damage: 30
+lifetime: 60
+}
+}
+]

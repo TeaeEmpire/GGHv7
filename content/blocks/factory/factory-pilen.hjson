@@ -1,0 +1,15 @@
+type: genericCrafter
+name: "Пылесос"
+description: "Находит пыль в воздухе"
+outputItem: pil/1
+size: 1
+hasItem: true
+craftTime: 180
+health: 30
+requirements: [
+ stone/5
+],
+category: production
+research: StoneMine
+idleSound: respawning
+idleSoundVolume: 0.5

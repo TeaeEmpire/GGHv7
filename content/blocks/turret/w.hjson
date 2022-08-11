@@ -1,0 +1,39 @@
+{
+    type: itemTurret
+    name: "Анигилятоная пушка"
+    description: "Какие враги?"
+    health: 800
+    size: 2
+    shots:5
+  shootCone:60 
+    recoil: 120
+    reloadTime:1
+    range: 12000
+    inaccuracy: 0
+    rotateSpeed: 10.0
+        ammoTypes: {
+bax: {
+            speed: 10.0
+            damage: 3000000
+            reloadMultiplier: 2.5
+            bulletWidht: 40
+            bulletHeight:20
+			width: 20
+            height: 20
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            lifetime: 600
+            ammoMultiplier: 5.5
+            backColor: FFBE20
+            frontColor: FFBE20
+			splashDamageRadius: 800
+            splashDamage: 100000
+        }
+    }
+    requirements: [
+bax/2000	 
+    ]
+    category: turret
+	researchCostMultiplier: 0.5
+    research: duo
+}

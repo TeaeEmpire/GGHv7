@@ -1,0 +1,59 @@
+name: "Мультизавод по легкой легковооружённой технике"
+description: "Производит различную легкую технику."
+type: UnitFactory
+size: 4
+consumes: {
+  power: 5
+}
+plans: [
+  {
+    unit:miner
+    requirements: [
+      silicon/50
+	  tin/30
+	  graphite/10
+    ] 
+    time: 1200
+  }
+  {
+  unit: minerT
+  requirements: [
+	 silicon/75
+     graphite/35
+     titanium/60
+	]
+	time: 1600
+	}
+	{
+	unit: minerTU
+	requirements: [
+	 silicon/120
+     graphite/70
+	 thorium/140
+     titanium/120
+	]
+	time: 2400
+	}
+	{
+	unit: minerTUU
+	requirements: [
+	silicon/230
+    graphite/200
+	thorium/100
+	surge-alloy/120
+    titanium/270
+    plastanium/120
+	bax/8
+	]
+	time: 3200
+	}
+]
+requirements: [
+  copper/140
+  lead/140
+  silicon/60
+  graphite/80
+  metaglass/120
+]
+category: units
+research: core-foundation

@@ -1,0 +1,28 @@
+type: genericCrafter
+name: "Павильщик1."
+description: ""
+outputLiquid: {
+	liquid: slag1
+	amount: 2
+}
+size: 1
+hasLiquids: true
+hasItem: true
+craftTime: 60
+health: 20
+consumes: {
+power:0.3
+ items: {
+  items: [
+   scrap/1
+]
+}
+}
+requirements: [
+ pilin/30
+ stone/40
+]
+category: crafting
+research: factory-pilin
+idleSound: respawning
+idleSoundVolume: 0.5

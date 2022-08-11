@@ -1,0 +1,32 @@
+{
+	"name": "Ускоритель",
+	"description": "Зелёно-чайный ускоритель.",
+	"type": "OverdriveProjector",
+	"health": 360,
+	"size": 2,
+	"range":80,
+	"speedBoost": 2.666
+	"consumes":{
+	    "power": 4.0,
+        	"items": {
+			"items": [
+				{ "item": "gryn", "amount": 1}
+				
+			],
+			"booster":true,
+"optional": true
+		}
+},
+    
+	"requirements": [
+		{ "item": "lead", "amount": 45	},
+		{ "item": "copper", "amount":130},
+		{ "item": "silicon", "amount":50}
+{ "item": "gryn", "amount":90}
+{ "item": "graphite", "amount":40}
+		
+	],
+	"boost":true,
+	"category": "effect",
+	"research": "strucokpro-elov"
+}

@@ -1,0 +1,33 @@
+name: "Разбиратель. "
+description: "Разбирает стручки на азот и фосфор."
+type: separator
+size: 2
+health: 450
+hasPower: true
+hasLiquids: true
+hasItems: true
+liquidCapacity: 60
+craftTime: 20
+consumes:
+{
+power: 2.20
+ items: {
+  items: [
+  spore-pod/1
+  ]
+ }
+}
+results:[
+	fosfor/5
+	azot/5
+	]
+requirements: [
+	copper/65
+	graphite/85
+        silicon/90
+        
+]
+research: planta
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.5

@@ -1,0 +1,23 @@
+type: flying
+flying: true
+name: ШахтерТ3
+description: Копает лучше чем предыдущие версии шахтера.
+details: для использования поставьте схему "miner"
+speed: 4.0
+hitsize: 5
+rotateSpeed: 5
+mineTier: 5
+mineSpeed: 6.0
+health: 200
+commandLimit: 4
+armor:0
+itemCapacity: 20
+research: {
+parent: minerT
+requirements: [
+	silicon/10000
+    graphite/6000
+	thorium/4000
+    titanium/7000
+	]
+}

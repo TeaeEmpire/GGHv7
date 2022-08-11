@@ -1,0 +1,7 @@
+{
+ type: material
+ name: "Пыль"
+ description: "Отходы от горения органики или она в воздухе.."
+ color: C3C3C3
+ tier: 2
+}

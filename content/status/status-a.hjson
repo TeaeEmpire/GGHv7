@@ -1,0 +1,5 @@
+name: "Ступор"
+description: "Даже ИИ можно научится боятся. Даже если это всего лишь программа." 
+reloadMultiplier: 0.0
+speedMultiplier: 0.0
+effectChance: 0.3

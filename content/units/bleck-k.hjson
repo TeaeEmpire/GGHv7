@@ -1,0 +1,45 @@
+type: mech
+name: Копейщик
+description: Хорошо подходит для поддержки основных сил.
+health: 200
+hitsize: 10
+canDrown: false
+rotateSpeed: 10
+commandLimit: 4
+armor:3
+range: 4
+itemCapacity: 0
+speed: 1.5
+research: {
+parent: unit-tea
+requirements: [
+      silicon/1500
+	  bleck/1800
+]
+}
+weapons: [
+{
+  name: bleck-k-weapon
+  x: 0
+  y: 2
+  shootY: 3
+shootX: -3
+  mirror: false
+  reload: 70
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 25
+speed: 0.5
+instantDisappear: true
+damage: 150
+lifetime: 45
+}
+}]

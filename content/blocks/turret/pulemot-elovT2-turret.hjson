@@ -1,0 +1,42 @@
+{
+    type: itemTurret
+    name: "Желто-чайный пулемёт"
+    description: "Эффективно растреливает наземную технику, при особой нужде можно взять под свое управление и расстреливать воздушных врагов."
+    health: 600
+    size: 2
+    recoil: 3
+    reloadTime: 9
+    range: 200
+    	targetAir: false
+    inaccuracy: 5
+    rotatespeed: 5.0
+    ammoTypes: {
+      elov: {
+         
+			speed: 4
+             lifetime: 58
+            damage: 16
+            reloadMultiplier: 1.0
+             width: 7
+             height: 9
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            splashDamageRadius: 10
+            splashDamage: 40
+            ammoMultiplier: 8
+            backColor: FF9A00
+            frontColor: FF9A00
+			knockback:1
+		
+}
+    }
+    requirements: [
+       elov/80
+       copper/60
+      
+	   lead/70
+    silicon/50  
+]
+    category: turret
+    research: bleck-turret
+}

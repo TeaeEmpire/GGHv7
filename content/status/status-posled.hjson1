@@ -1,0 +1,7 @@
+name: "Последний рывок"
+description: "Дает ИИ возможность решающего удара с повышой мощностью, перегружая аккумулятор тем самым сокращая срок службы юнита." 
+reloadMultiplier: 2.0
+speedMultiplier: 2.0
+damageMultiplier: 2.0
+damage: 1
+healthMultiplier: 0.5

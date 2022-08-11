@@ -1,0 +1,31 @@
+type: genericCrafter
+name: "Павильщик4."
+description: ""
+outputLiquid: {
+	liquid: slag4
+	amount: 2
+}
+size: 1
+hasLiquids: true
+hasItem: true
+craftTime: 60
+health: 20
+consumes: {
+power:2
+ items: {
+  items: [
+   scrap/1
+]
+}
+}
+requirements: [
+ copper/45
+	graphite/20
+	lead/10
+	titanium/25
+        silicon/40
+]
+category: crafting
+research: separator
+idleSound: respawning
+idleSoundVolume: 0.5

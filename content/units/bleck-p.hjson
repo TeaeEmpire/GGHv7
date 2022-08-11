@@ -1,0 +1,45 @@
+type: mech
+name: Паладин
+description: Он мастерски орудует мечом рубя врагов.
+health: 170
+hitsize: 10
+canDrown: false
+rotateSpeed: 10
+commandLimit: 4
+armor:7
+Controller: SuicideAI
+range: 10
+itemCapacity: 0
+speed: 1.5
+research: {
+parent: unit-tea
+requirements: [
+      silicon/1700
+	  bleck/1900
+	  ]
+}
+weapons: [
+{
+  name: bleck-p-weapon
+  x: 0
+  y: 0
+  shootY: 3
+  mirror: false
+  reload: 20
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+instantDisappear: true
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 25
+speed: 0.5
+damage: 150
+lifetime: 45
+}
+}]

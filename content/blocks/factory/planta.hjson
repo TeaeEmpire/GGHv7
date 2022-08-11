@@ -1,0 +1,79 @@
+
+
+
+name: "Плантация"
+description: "Выращивает различные чай."
+type: multicraft.MultiCrafter
+craftEffect: smeltsmoke
+category: crafting
+menu: Simple
+recipes: [
+{
+input: {
+fluids: [water/0.1]
+power: 0.3
+items: [ggh2.1-semla/1]
+power: 1
+}
+output: {
+items: [
+ggh2.1-bleck/4
+]
+}
+craftTime: 60
+}
+{
+input: {
+fluids: [water/0.3]
+power: 1.5
+items: [ggh2.1-semla/1]
+power: 1
+}
+output: {
+items: [
+ggh2.1-elov/3
+]
+}
+craftTime: 60
+}
+{
+input: {
+fluids: [water/0.5]
+items: [ggh2.1-fosfor/1, ggh2.1-semla/1]
+power: 2.0
+}
+output: {
+items: [
+ggh2.1-gryn/2
+]
+}
+craftTime: 60
+}
+{
+input: {
+fluids: [water/0.8]
+items: [ggh2.1-fosfor/1, ggh2.1-azot/1, ggh2.1-semla/3]
+power: 2.5
+}
+output: {
+items:  [ggh2.1-esinii/1]
+}
+craftTime: 60
+}
+
+]
+requirements: [
+copper/70
+lead/40
+graphite/60
+]
+
+size: 2
+liquidCapacity: 30
+itemCapacity: 30
+research: {
+parent: factory-semla
+objectives: [
+mechanical-pump
+]
+}

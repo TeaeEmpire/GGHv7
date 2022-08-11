@@ -1,0 +1,50 @@
+type: mech
+name: Давайкин
+description:
+Теперь с топором
+health: 600
+range: 1
+speed: 1.0
+
+canDrown: false
+hitSize: 15
+rotateSpeed: 5
+commandLimit: 24
+buildSpeed: 0
+armor:12
+itemCapacity: 0
+speed: 1
+research: {
+parent: bleck-r
+requirements: [
+    silicon/2600
+    metaglass/2200
+    elov/2400
+	]
+}
+weapons: [
+{
+  name: elov-r-weapon
+  x: 0
+  y: 0
+  shootY: 3
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+instantDisappear: true
+shrinkY: 0
+splashDamageRadius: 48
+splashDamage: 100
+speed: 1
+damage: 350
+lifetime: 38
+}
+}
+]

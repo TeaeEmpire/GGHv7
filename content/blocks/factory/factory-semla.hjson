@@ -1,0 +1,42 @@
+{
+type: GenericCrafter
+name: "Синтезатор почвы."
+description: "Синтезирует почву из песка, глины и стручков в качестве гумуса."
+outputItem: semla/4
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 2
+hasPower: true
+hasItem: true
+craftTime: 60
+health: 450
+updateEffect: smeltsmoke
+consumes: {
+power: 1
+ items: {
+  items: [
+   glina/2
+   sand/3
+   spore-pod/1
+  ],
+ }
+}
+requirements: [
+ lead/50 
+ copper/90
+ silicon/40
+],
+category: crafting
+research: cultivator
+idleSound: respawning
+idleSoundVolume: 0.5
+}

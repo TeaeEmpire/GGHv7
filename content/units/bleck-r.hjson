@@ -1,0 +1,48 @@
+type: mech
+name: Рыцарь
+description: Основная еденица завода Т1-Tea
+health: 210
+range: 10
+speed: 1.0
+canDrown: false
+hitSize: 10
+rotateSpeed: 5
+commandLimit: 24
+Controller: SuicideAI
+buildSpeed: 0.8
+armor:12
+itemCapacity: 0
+speed: 1
+research: {
+parent: unit-tea
+requirements: [
+      silicon/2000
+	  bleck/2500
+	  ]
+}
+weapons: [
+{
+  name: bleck-r-weapon
+  x: 0
+  y: 0
+  shootY: 3
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+instantDisappear: true
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 45
+speed: 0.5
+damage: 100
+lifetime: 45
+}
+}
+]

@@ -1,0 +1,72 @@
+type: flying
+flying: true
+name: Строитель.
+description:Летит и строит он завод.
+speed: 3.0
+hitsize: 15
+rotateSpeed: 5
+canDrown: false
+health: 300
+range: 100
+commandLimit: 4
+buildSpeed: 6.0
+armor:0
+itemCapacity: 40
+speed: 1
+research: {
+parent: elov-s
+requirements: [
+    silicon/7500
+    metaglass/8000
+    graphite/7800
+    gryn/4040
+	]
+}
+weapons: [
+{
+  name: gryn-s-weapon
+  x: 10
+  y: -3
+  shootY: 0
+  mirror: true
+  reload: 60
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 6
+speed: 4
+lifetime: 30
+height: 6
+damage: 60
+shrinkY: 0
+splashDamageRadius: 0
+splashDamage: 0
+}
+}
+{
+  name: gryn-ss-weapon
+  x: 5
+  y: 0
+  shootY: 3
+  mirror: true
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: true
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+shrinkY: 0
+splashDamageRadius: 0
+splashDamage: 0
+speed: 4
+damage: 30
+lifetime: 30
+}
+}
+]

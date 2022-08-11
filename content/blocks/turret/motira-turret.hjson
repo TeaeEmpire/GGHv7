@@ -1,0 +1,42 @@
+{
+    type: ItemTurret
+    name: "Сине-чайная мотира. "
+    description: "Мотира дальнего действия."
+    health: 2500
+    size: 3
+    recoil: 5
+    reloadTime: 120
+    range: 400
+targetAir: false
+
+    inaccuracy: 1
+    rotateSpeed: 1
+    ammoTypes: {
+       esinii: {
+            speed: 5.0
+            damage: 800
+            type: ArtilleryBulletType
+            reloadMultiplier: 1.0
+            Weigth: 25
+            Heigth: 25
+            shootEffect: shootBig
+            smokeEffect: shootBigSmoke
+            lightning: 4
+            lightningDamage: 60
+            lightningLength: 5
+            lightningLengthRand: 5
+            ammoMultiplier: 1
+            backColor: d99d73
+            frontColor: d99d73
+            splashDamageRadius: 80
+            splashDamage: 300
+        }
+    }
+    requirements: [
+     titanium/120
+       esinii/80
+	silicon/60
+    ]
+    category: turret
+    research: pushka-gryn-turret
+}

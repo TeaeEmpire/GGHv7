@@ -1,0 +1,39 @@
+name: "Казарма 3"
+description: "Отличная подготовка солдат."
+type: Reconstructor
+size: 5
+time: 1500 
+consumes: {
+  power: 3
+  items: {
+    items: [
+    silicon/160
+    metaglass/260
+    graphite/490
+    gryn/80
+    ]
+  }
+}
+upgrades: [
+  [
+     elov-k, gryn-k
+  ]
+  [
+     elov-p, gryn-p
+  ]
+  [
+     elov-s, gryn-s
+  ]
+  [
+     elov-r, gryn-r
+  ]
+]
+requirements: [
+  copper/650
+  metaglass/190
+  lead/540
+  silicon/170
+   gryn/190
+]
+category: units
+research: unit-tea2

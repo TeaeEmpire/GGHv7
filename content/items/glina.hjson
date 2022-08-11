@@ -1,0 +1,7 @@
+{
+ type: material
+ name: "Глина"
+ description: "Можно слепить кружку."
+ color: 969DA7
+ tier: 0
+}

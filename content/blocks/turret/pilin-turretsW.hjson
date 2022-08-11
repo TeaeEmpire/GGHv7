@@ -1,0 +1,63 @@
+{
+    type: itemTurret
+    name: "Пыльная турель воздух"
+    description: "Ранняя зенитка."
+    health: 185
+    size: 1
+    recoil: 20
+    shots:4
+	burstSpacing: 3
+    reloadTime: 20
+    range: 190
+    inaccuracy: 20
+targetGround: false
+    rotateSpeed: 36.0
+    ammoTypes: {
+
+        pilin: {
+            speed: 5.0  
+            reloadMultiplier: 1.0
+           width: 5
+            Heigth: 9
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+splashDamageRadius: 50
+	lifetime: 35
+damage: 4
+  homingRange: 160
+            homingPower: 0.5
+            splashDamage: 13
+            type: FlakBulletType
+            ammoMultiplier: 1
+            backColor: FFBE00
+            frontColor: FFBE00
+			knockback:0.1
+        }
+
+stone: {
+            speed: 6.0
+            reloadMultiplier: 0.7
+           width: 5
+            Heigth: 9
+				lifetime: 30
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            homingRange: 60
+            homingPower: 1
+splashDamageRadius: 60
+            splashDamage: 10
+			damage: 6
+            type: FlakBulletType
+            ammoMultiplier: 1
+            backColor: FFBE20
+            frontColor: FFBE20
+			knockback:0.3
+        }
+    }
+    requirements: [
+       pilin/30 
+stone/30
+copper/80] 
+    category: turret
+    research: pilin-turrets
+}

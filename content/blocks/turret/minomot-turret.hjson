@@ -1,0 +1,43 @@
+{
+    type: ItemTurret
+    name: "Сине-чайный миномёт. "
+    description: "Мотира дальнего действия."
+    health: 300
+    size: 2
+    recoil: 5
+    reloadTime: 90
+    range: 400
+targetAir: false
+
+    inaccuracy: 1
+    rotateSpeed: 1.5
+    ammoTypes: {
+       esinii: {
+            speed: 5.0
+            damage: 200
+            type: ArtilleryBulletType
+            reloadMultiplier: 1.0
+            Weigth: 10
+            Heigth: 10
+            shootEffect: shootBig
+            smokeEffect: shootBigSmoke
+            lightning: 2
+            lightningDamage: 15
+            lightningLength: 2
+            lightningLengthRand: 3
+            ammoMultiplier: 1
+            backColor: d99d73
+            frontColor: d99d73
+            splashDamageRadius: 80
+            splashDamage: 100
+        }
+    }
+    requirements: [
+       copper/70
+plastanium/10
+       esinii/50
+	silicon/20
+    ]
+    category: turret
+    research: pushka-gryn-turret
+}

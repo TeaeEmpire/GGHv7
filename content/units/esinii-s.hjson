@@ -1,0 +1,81 @@
+type: flying
+flying: true
+name: Строитель.
+description:Летит и строит он завод.
+speed: 3.0
+health: 400
+hitSize: 20
+rotateSpeed: 5
+
+canDrown: false
+range: 100
+commandLimit: 4
+buildSpeed: 7.0
+armor:0
+itemCapacity: 40
+speed: 2
+research: {
+parent: gryn-s
+requirements: [
+	silicon/15000
+    graphite/13000
+    metaglass/15000
+    titanium/8000
+    esinii/7000
+	]
+}
+weapons: [
+{
+  name: esinii-s-weapon
+  x: 10
+  y: 8
+  shootY: 0
+  mirror: true
+  reload: 60
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: MissileBulletType
+width: 8
+height: 8
+lightRadius: 12.0
+shrinkY: 0
+lightOpacity:0.5
+lightning: 2
+lightningLength: 4
+lightningLengthRand: 4
+lightningDamage: 120
+statusDuration:60.0
+splashDamageRadius: 0
+splashDamage: 0
+speed: 4
+damage: 80
+lifetime: 40
+}
+}
+{
+  name: esinii-ss-weapon
+  x: 8
+  y: -13
+  shootY: 3
+  mirror: true
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: true
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 8
+height: 8
+shrinkY: 0
+splashDamageRadius: 0
+splashDamage: 0
+speed: 4
+damage: 40
+lifetime: 40
+}
+}
+]

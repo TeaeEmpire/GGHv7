@@ -1,0 +1,50 @@
+type: mech
+name: Асасин
+description: Пара плазменых клинков отлично подходит для нарезания хлебушка.
+health: 1600
+hitSize: 30
+canDrown: false
+rotateSpeed: 10
+groundLaye: 4
+
+armor:15
+range: 90
+itemCapacity: 10
+speed: 0.8
+research: {
+parent: gryn-p
+requirements: [
+	silicon/19000
+    graphite/16000
+    metaglass/18000
+    titanium/12000
+    esinii/12000
+	]
+}
+weapons: [
+{
+  name: esinii-p-weapon
+  x: 12
+  y: -2
+  shootY: 3
+  mirror: true
+  reload: 20
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+ bullet: {
+    type: SapBulletType
+    sapStrength: 0.8
+
+    length: 90
+    damage: 400
+    shootEffect: shootSmall
+    hitColor: 40d0f7
+    color: 8dfffb
+    despawnEffect: none
+    width: 1.54
+    lifetime: 30
+    knockback: 200
+  }
+}]

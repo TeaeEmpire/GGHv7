@@ -1,0 +1,8 @@
+{
+ type: material
+ name: "Керамика"
+ description: "Легкий материал для воздушной техники"
+ details: ДОХУЯ ХРУПКАЯ 
+ color: 6E7080
+ tier: 2
+}

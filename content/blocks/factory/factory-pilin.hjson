@@ -1,0 +1,27 @@
+type: genericCrafter
+name: "завод раствора."
+description: "Делат раствор из воды и пыли."
+outputItem: pilin/1
+itemCapacity: 30
+size: 1
+hasItem: true
+craftTime: 60
+health: 20
+consumes: {
+ items: {
+  items: [
+   pil/1
+   ]
+   }
+  liquid:{
+ liquid:water
+ amount: 0.05
+ }
+}
+requirements: [
+ stone/15
+]
+category: crafting
+research: factory-pilen
+idleSound: respawning
+idleSoundVolume: 0.5

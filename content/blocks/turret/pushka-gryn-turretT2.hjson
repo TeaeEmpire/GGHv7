@@ -1,0 +1,44 @@
+{
+    type: itemTurret
+    name: "Зелёно-чайная пушка В2"
+    description: "Более большой калибр."
+    health: 1200
+    size: 3
+    recoil: 5
+shots:1
+    reloadTime: 120
+    range: 270
+    
+    inaccuracy: 1
+    rotateSpeed: 3.0
+    ammoTypes: {
+            gryn: {
+            speed: 15.0
+            damage: 440
+            reloadMultiplier: 1.0
+             width: 7
+             height: 20
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            splashDamageRadius: 80
+            splashDamage: 200
+            ammoMultiplier: 2
+            backColor: EAC300
+            frontColor: CFC776
+			lifetime: 18
+			incendAmount: 10
+			incendSpread: 10
+			incendChance: 10
+        }
+    }
+    requirements: [
+       
+gryn/90
+copper/120
+lead/185
+graphite/120
+silicon/80
+    ]
+    category: turret
+    research: pushka-gryn-turret
+}

@@ -1,0 +1,30 @@
+type: cultivator
+name: "Плантация жёлтого чая"
+description: "Желтый чай ничего обычного."
+outputItem: elov/4
+size: 2
+hasPower: true
+hasItem: true
+craftTime: 120
+health: 600
+updateEffect: smeltsmoke
+consumes: {
+ power: 1.5
+ items: {
+  items: [
+   semla/1
+  ]
+ }
+liquid:{
+ liquid:water
+ amount: 0.09
+ }
+}
+requirements: [
+ lead/40
+copper/40
+],
+category: crafting
+research: factory-bleck
+idleSound: respawning
+idleSoundVolume: 0.5

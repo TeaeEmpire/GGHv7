@@ -1,0 +1,27 @@
+type: genericCrafter
+name:"Каменная шахта"
+description:"Добыват камень везде."
+drawer: {
+type: DrawMulti
+drawers: 
+[
+DrawDefault, 
+{
+type: DrawRegion
+suffix: "-rotator"
+spinSprite: true
+rotateSpeed: 5
+}
+] 
+}
+outputItem:stone/1
+size:1
+hasItems:true
+craftTime:30
+updateEffect:steam
+itemCapacity:10
+requirements:[
+copper/12
+]
+category:production
+research:mechanical-drill

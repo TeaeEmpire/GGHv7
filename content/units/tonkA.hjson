@@ -1,0 +1,81 @@
+type: mech
+name: АРТИЛЛЕРИЯ
+description: Один выстрел - один противник. Имеет высокую огневуюю мощь и длительную перезарядку.
+speed: 0.3
+hitSize: 50
+rotateSpeed: 0.5
+baseRotateSpeed: 0.68
+mechStepShake: 0
+mechFrontSway: 0
+trailLength: 0
+trailX: 0
+trailY: 0
+trailScl: 0
+landShake: 0
+riseSpeed: 0
+drag: 0.1
+accel: 0.5
+canDrown: false
+health: 1000
+commandLimit: 0
+rotateShooting: false
+armor:50
+itemCapacity: 0
+research: {
+parent: zavod
+requirements: [
+      silicon/35000
+	  titanium/50000
+	  thorium/7000
+	  copper/30000
+	  lead/35000
+	  graphite/24000
+	  metaglass/30000
+	  ]
+	  }
+weapons: [
+{
+  name: ar-weapon
+  rotateSpeed: 0.3
+  x: 0
+  y: 0
+  shootY: 40
+  shootX: 0
+  mirror: false
+  reload: 660
+  hitEffect:{
+  type: WaveEffect
+  lifetime: 30
+  sizeFrom: 50
+  sizeTo: 0
+  strokeFrom: 50
+  strokeTo: 0
+  colorFrom: 000000
+  colorTo: FFFFFF
+  }
+  recoil: 1
+  shootSoundVolume: 1000000000
+  rotate: true
+  shootSound: buuuuuuuuuuum
+   bullet: {
+   hitEffect:{
+  type: WaveEffect
+  lifetime: 30
+  sizeFrom: 50
+  sizeTo: 0
+  strokeFrom: 50
+  strokeTo: 0
+  colorFrom: 000000
+  colorTo: FFFFFF
+  }
+type: basicBulletType
+width: 8
+height:20
+speed: 3
+lifetime: 360
+damage: 400
+splashDamageRadius: 160
+splashDamage: 240
+}
+}
+]

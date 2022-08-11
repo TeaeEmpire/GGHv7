@@ -1,0 +1,10 @@
+name: "Пар"
+ description:"Используется для получении энергии."
+viscosity: 0
+temperature: 1.0
+effect: melting
+color: "#dfe5e5"
+lightColor: "#dfe5e5"
+research:{
+parent:factory-par
+}

@@ -1,0 +1,53 @@
+name: "Усиленная печь кинетического сплава. "
+description: "Требует шлак для работы отделяя все нужные компоненты."
+type: genericCrafter
+size: 4
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+health: 1860
+hasLiquids: true
+hasItems: true
+liquidCapacity: 60
+craftTime: 60
+consumes:
+{
+power:4.30
+items: {
+  items: [
+   silicon/8
+]
+ }
+ liquid:{
+ liquid: slag
+ amount: 0.2
+ }
+}
+outputItem:
+surge-alloy/2
+	
+        
+        
+        
+	
+requirements: [
+silicon/150
+thorium/190
+lead/200 
+copper/230
+lead/220
+surge-alloy/40
+	
+]
+research: centrifuge
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.5

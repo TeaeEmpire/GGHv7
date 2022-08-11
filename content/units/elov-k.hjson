@@ -1,0 +1,44 @@
+type: mech
+name: Стрелок
+description: Лук с кумулятивными стрелами достаточно эфективное оружие против т2-т3 идущих по одиночке.
+health: 350
+hitSize: 10
+rotateSpeed: 20
+canDrown: false
+commandLimit: 3
+armor:4
+range: 100
+
+itemCapacity: 10
+speed: 2.5
+research: {
+parent: bleck-k
+requirements: [
+    silicon/2900
+    metaglass/2570
+    elov/2600
+	]
+}
+weapons: [
+{
+  name: elov-k-weapon
+  x: 0
+  y: 5
+  shootY: 2
+shootX: 0
+  mirror: false
+  reload: 120
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 8
+shrinkY: 0
+speed: 5
+damage: 100
+lifetime: 35
+}
+}]

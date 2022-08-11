@@ -1,0 +1,7 @@
+{
+ type: material
+ name: "раствор"
+ description: "Вода и пыль."
+ color: 7F7F7F
+ tier: 2
+}

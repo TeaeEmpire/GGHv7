@@ -1,0 +1,10 @@
+name: "Шлак110"
+ description:"Шлак с высокой температурой который может выделять торий и титан."
+viscosity: 0.5
+temperature: 1.1
+effect: melting
+color: "#DAA520"
+lightColor: "#DAA520"
+research:{
+parent:slag
+}

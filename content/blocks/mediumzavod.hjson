@@ -1,0 +1,32 @@
+name: "Мультизавод по средней вооружённой технике"
+description: "Производит различную среднюю технику."
+type: UnitFactory
+size: 7
+consumes: {
+  power: 10
+}
+plans: [
+  {
+    unit:zavod-h
+    requirements: [
+      copper/150
+      lead/150
+      silicon/90
+      graphite/80
+      metaglass/120
+	  titanium/50
+    ] 
+    time: 2400
+  }
+]
+requirements: [
+  copper/250
+  lead/150
+  silicon/90
+  graphite/80
+  metaglass/120
+  titanium/60
+  plastanium/50
+]
+category: units
+research: minizavod

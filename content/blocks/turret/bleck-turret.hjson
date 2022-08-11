@@ -1,0 +1,37 @@
+{
+    type: itemTurret
+    name: "Черно-чайная турель"
+    description: "Турель подходит для обороны на средних этапах игры."
+    health: 300
+    size: 2
+    shots:1
+  shootCone:60 
+    recoil: 120
+    reloadTime: 15
+    range: 180
+    
+    inaccuracy: 5
+    rotateSpeed: 3.0
+        ammoTypes: {
+bleck: {
+            speed: 7.0
+            damage: 15
+            reloadMultiplier: 1
+            Weigth: 5
+            Heigth: 9
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            lifetime: 27
+            ammoMultiplier: 2.0
+            backColor: FFBE20
+            frontColor: FFBE20
+        }
+    }
+    requirements: [
+bleck/30
+copper/60
+lead/40
+    ]
+    category: turret
+    research: duo
+}

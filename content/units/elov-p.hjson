@@ -1,0 +1,46 @@
+type: mech
+name: Самурай ученик.
+description: Он только учится.
+health: 400
+hitSize: 15
+range: 10
+rotateSpeed: 10
+commandLimit: 4
+
+canDrown: false
+armor:9
+itemCapacity: 0
+speed: 1.5
+research: {
+parent: bleck-p
+requirements: [
+    silicon/2500
+    metaglass/2100
+    elov/2300
+	]
+}
+weapons: [
+{
+  name: elov-p-weapon
+  x: 0
+  y: 1
+  shootY: 3
+  mirror: false
+  reload: 20
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+shrinkY: 0
+splashDamageRadius: 48
+splashDamage: 50
+speed: 1
+instantDisappear: true
+damage: 250
+lifetime: 38
+}
+}]

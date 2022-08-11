@@ -1,0 +1,46 @@
+type: GenericCrafter
+name: "Плавильщик тяжёлых металлов торий"
+description: "Делает торий из шлака и металлолома"
+outputItem: thorium/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 2
+itemCapacity: 30
+hasPower: true
+hasItem: true
+craftTime: 30
+health: 800
+updateEffect: smeltsmoke
+consumes: {
+ power: 4.5
+ items: {
+  items: [
+   scrap/4
+  ]
+ }
+liquid:{
+ liquid:slag
+ amount: 0.3
+ }
+}
+requirements: [
+ lead/350
+ copper/350
+ silicon/190
+ graphite/160
+ titanium/170
+ thorium/120
+],
+category: crafting
+research: factory-matalltitan
+idleSound: respawning
+idleSoundVolume: 0.5

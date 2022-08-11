@@ -1,0 +1,39 @@
+type: genericCrafter
+name: "Ситечко"
+description: "Ищет металлолом в песке, требует энергию для работы электромагнита."
+outputItem: scrap/3 
+drawer: {
+type: DrawMulti
+drawers: 
+[
+DrawDefault, 
+{
+type: DrawRegion
+suffix: "-rotator"
+spinSprite: true
+rotateSpeed: 5
+}
+] 
+}
+size: 1
+itemCapacity: 10
+hasPower: true
+hasItem: true
+craftTime: 30
+health: 600
+consumes: {
+ power: 1.0
+items: {
+  items: [
+   sand/5
+  ]
+ }
+}
+requirements: [
+ lead/40
+ copper/40
+],
+category: crafting
+research: pulverizer
+idleSound: respawning
+idleSoundVolume: 0.5

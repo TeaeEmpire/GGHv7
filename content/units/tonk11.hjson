@@ -1,0 +1,282 @@
+type: mech
+name: Сверхтяжелый танк
+description: Высокая броня, мощные орудия, "отличная" маневренность, то что надо для победы над еретиками!
+speed: 0.2
+hitSize: 100
+baseRotateSpeed: 0.40
+rotateSpeed: 0.40
+mechStepShake: 0
+mechFrontSway: 0
+trailLength: 0
+trailX: 0
+trailY: 0
+trailScl: 0
+landShake: 0
+riseSpeed: 0
+drag: 0.1
+accel: 0.5
+canDrown: false
+health: 20000
+commandLimit: 0
+rotateShooting: false
+armor:60
+itemCapacity: 200
+research: {
+parent: tonk
+requirements: [
+      silicon/207000
+	  titanium/126000
+	  copper/145000
+	  lead/35000
+	  tin/95000
+	  graphite/78000
+	  metaglass/79000
+	  phase-fabric/14000
+      surge-alloy/28000
+    ] 
+	}
+weapons: [
+{
+  name: w3-weapon
+  rotateSpeed: 0
+  x:42
+  y:12
+  shootY: 0
+  shootX: 0
+  reload: 3
+  mirror: true
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: none
+  shootSoundVolume: 0.1
+   bullet: {
+type: basicBulletType
+hitEffect: none
+width: 2
+height:5
+speed: 5
+lifetime: 60
+damage: 10
+splashDamageRadius: 0
+splashDamage: 0
+}
+}
+{
+  name: w3-weapon
+  rotateSpeed: 0
+  x: 45
+  y: 10
+  shootY: 0
+  reload: 3
+  shootX: 0
+  mirror: true
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: none
+  shootSoundVolume: 0.1
+   bullet: {
+type: basicBulletType
+width: 2
+height:5
+hitEffect: none
+speed: 6
+lifetime: 40
+damage: 10
+splashDamageRadius: 0
+splashDamage: 0
+}
+}
+{
+  name: a-weapon
+  rotateSpeed: 0
+  x: -10
+  y: 30
+  shootY: 10
+  reload: 300
+  shootX: 0
+  mirror: false
+  ejectEffect: none
+  recoil: 0
+  rotate: false
+  shootSound: bum
+  shootSoundVolume: 1
+   bullet: {
+type: ArtilleryBulletType
+smokeEffect: shootBigSmoke
+hitEffect: flakExplosion
+width: 10
+height:20
+speed: 3
+lifetime: 180
+damage: 2000
+splashDamageRadius: 160
+splashDamage: 800
+}
+}
+{
+  name: sd2-weapon
+  rotateSpeed: 5.0
+  x: 12
+  y: 15
+  shootY: 4
+  shootX: 2
+  alternate: true
+  restitution: 0.1
+  shots: 2
+  spread: 5
+  shootCone: 2
+  mirror: false
+  reload: 8
+  ejectEffect: none
+  shootCone: 10
+  recoil: 4
+  shootSoundVolume: 1
+  rotate: true
+  shootSound: shootSnap
+   bullet: {
+type: FlakBulletType
+hitEffect: flakExplosion
+width: 6
+height:6
+speed: 7
+lifetime: 30
+damage: 70
+splashDamageRadius: 40
+splashDamage: 30
+}
+}
+{
+  name: sd1-weapon
+  rotateSpeed: 5.0
+  x: 12
+  y: 15
+  shootY: 4
+  shootX: -2
+  mirror: false
+  reload: 8
+  spread: 5
+  ejectEffect: none
+  recoil: 0
+  shootSoundVolume: 10
+  rotate: true
+  shootSound: none
+   bullet: {
+type: FlakBulletType
+hitEffect: flakExplosion
+width: 6
+height:6
+speed: 7
+lifetime: 30
+damage: 70
+splashDamageRadius: 40
+splashDamage: 30
+}
+}
+{
+  name: ss0-weapon
+  rotateSpeed: 2.0
+  x: 40
+  y: 0
+  shootY: 20
+  shootX: 0
+  mirror: true
+  reload: 48
+  ejectEffect: none
+  recoil: 0.1
+  shootSoundVolume: 10
+  rotate: true
+  shootSound: laser
+   bullet: {
+type: LaserBulletType
+hitEffect: none
+speed: 0
+recoil: 0
+lifetime: 30
+damage: 120
+sideLength: 0
+sideWidth: 0
+sideAngle: 20
+length: 270
+Width: 2
+height: 2
+colors: [C60000, B70000, A50000]
+}
+}
+{
+  name: w2-weapon
+  rotateSpeed: 1
+  x: 10
+  y: -10
+  shootY: 30
+  shootX: 6
+  mirror: false
+  reload: 60
+  ejectEffect: none
+  recoil: 5
+  rotate: true
+  shootSound: bim
+   bullet: {
+type: basicBulletType
+width: 5
+height:10
+hitEffect: none
+speed: 5
+lifetime: 160
+damage: 90
+splashDamageRadius: 20
+splashDamage: 20
+}
+}
+{
+  name: w0-weapon
+  rotateSpeed: 1
+  x: 10
+  y: -10
+  shootY: 60
+  shootX: -5
+  mirror: false
+  reload: 180
+  ejectEffect: none
+  recoil: 7
+  rotate: true
+  shootSound: bum
+   bullet: {
+type: basicBulletType
+width: 10
+hitEffect: none
+height:25
+speed: 5
+lifetime: 160
+damage: 1000
+splashDamageRadius: 120
+splashDamage: 350
+}
+}
+{
+  name: w1-weapon
+  rotateSpeed: 1
+  x: 10
+  y: -10
+  shootY: 10
+  shootX: 0
+  mirror: false
+  reload: 600
+  ejectEffect: none
+  recoil: 1
+  rotate: true
+  shootSound: none
+   bullet: {
+type: basicBulletType
+width: 0
+height:0
+speed: 5
+hitEffect: none
+lifetime: 160
+damage: 0
+splashDamageRadius: 0
+splashDamage: 0
+}
+}
+] 

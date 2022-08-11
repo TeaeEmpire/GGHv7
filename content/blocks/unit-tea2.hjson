@@ -1,0 +1,38 @@
+name: "Казарма 2"
+description: "Хорошая подготовка солдат."
+type: Reconstructor
+size: 3
+time: 1000 
+consumes: {
+  power: 3
+  items: {
+    items: [
+    silicon/60
+    metaglass/70
+    elov/60
+    ]
+  }
+}
+upgrades: [
+  [
+    bleck-k, elov-k
+  ]
+  [
+    bleck-p, elov-p
+  ]
+  [
+    bleck-s, elov-s
+  ]
+  [
+    bleck-r, elov-r
+  ]
+]
+requirements: [
+  copper/50
+  lead/140
+  silicon/70
+  metaglass/50
+  elov/90
+]
+category: units
+research: unit-tea

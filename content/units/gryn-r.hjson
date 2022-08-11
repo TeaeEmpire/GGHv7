@@ -1,0 +1,77 @@
+type: mech
+name: Палач
+description:Мощный меч плавит металл, щит отбрасывающий сильных на метры.
+health: 1200
+speed: 1.0
+range: 80
+hitSize: 20
+rotateSpeed: 5
+
+commandLimit: 24
+buildSpeed: 0
+armor:17
+itemCapacity: 0
+canDrown: false
+speed: 0.9
+research: {
+parent: elov-r
+requirements: [
+    silicon/17500
+    metaglass/18000
+    graphite/17800
+    gryn/8080
+	]
+}
+weapons: [
+{
+  name: gryn-r-weapon
+  x: 14
+  y: 5
+  shootY: 3
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+   bullet: {
+    type: LaserBulletType
+    length: 80
+    damage: 400
+	status: unmoving
+    width: 20
+    lifetime: 40
+    largeHit: true
+    healPercent: 0
+    collidesTeam: false
+    sideAngle: 0
+    sideWidth: 0
+    sideLength: 0
+    colors: [dbd879, c2a66e, cfc776]
+  }
+}
+{
+  name: gryn-rr-weapon
+  x: -14
+  y: 7
+  shootY: 3
+  mirror: false
+  reload: 60
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 3
+height: 4
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 45
+speed: 0
+damage: 60
+lifetime: 10
+knockback: 10
+}
+}
+]

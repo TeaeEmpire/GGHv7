@@ -1,0 +1,33 @@
+{
+type: cultivator
+name: "Плантация зелёного чая чай."
+description: "Вкусный ароматный чаек."
+outputItem: gryn/3
+size: 2
+hasPower: true
+hasItem: true
+craftTime: 120
+health: 500
+updateEffect: smeltsmoke
+consumes: {
+power: 2.0
+ items: {
+  items: [
+  azot/1
+   semla/1
+  ],
+ }
+liquid:{
+ liquid:water
+ amount: 0.11
+ }
+}
+requirements: [
+ lead/40 
+ copper/40
+],
+category: crafting
+research: factory-elov
+idleSound: respawning
+idleSoundVolume: 0.5
+}

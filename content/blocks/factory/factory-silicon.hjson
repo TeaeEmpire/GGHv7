@@ -1,0 +1,40 @@
+{
+type: GenericCrafter
+name: "Кремневый экстрактор"
+description: "Нагревает песок и отделяет кремний от примесей."
+outputItem: silicon/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 2
+hasPower: true
+hasItem: true
+craftTime: 120
+health: 350
+updateEffect: smeltsmoke
+consumes: {
+power: 3.0
+ items: {
+  items: [
+   sand/6
+  ],
+ }
+}
+requirements: [
+ lead/50 
+ copper/60
+graphite/40
+],
+category: crafting
+research: factory-pesok
+idleSound: respawning
+idleSoundVolume: 0.5
+}

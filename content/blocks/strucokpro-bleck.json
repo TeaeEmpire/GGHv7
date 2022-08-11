@@ -1,0 +1,26 @@
+name: Черно-чайный ремонтный проектор.
+description: Ремонтирует все в радиусе 12 блоков.
+type: MendProjector
+health: 600
+phaseRadiusBoost: 10
+size: 2
+reload: 10
+healPercent: 1
+range: 100
+consumes: {
+  power: 4
+items: {
+items: [bleck/1
+]
+booster: true
+
+}
+}
+requirements: [
+silicon/140
+titanium/70
+plastanium/40
+bleck/200
+ ]
+category: effect
+research: mend-projector

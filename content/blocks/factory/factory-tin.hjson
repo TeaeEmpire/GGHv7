@@ -1,0 +1,38 @@
+type: genericCrafter
+name: "Обжигатель"
+description: "Обжигает глину и превращает ее в керамику."
+outputItem: tin/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+itemCapacity: 30
+size: 2
+hasItem: true
+craftTime: 60
+health: 600
+consumes: {
+power: 2.0
+ items: {
+  items: [
+   glina/1
+   ]
+   }
+}
+requirements: [
+ lead/20
+metaglass/30
+copper/50
+graphite/20
+]
+category: crafting
+research: factory-pilen
+idleSound: respawning
+idleSoundVolume: 0.5

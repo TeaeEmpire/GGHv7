@@ -1,0 +1,20 @@
+{
+name: Кинетический узел дальнего действия
+description: "Продвинутый узел, для передачи энергии, способно подключить к себе много энергопотребителей."
+type: PowerNode
+health: 250
+size: 3
+maxNodes: 20
+laserRange: 50
+requirements: [
+titanium/12 
+silicon/20
+lead/20 
+plastanium/20
+phase-fabric/5
+surge-alloy/30
+		
+	]
+category: power
+research :solar-panel
+}

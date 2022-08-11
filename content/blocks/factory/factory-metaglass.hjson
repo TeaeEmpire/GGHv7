@@ -1,0 +1,43 @@
+{
+type: GenericCrafter
+name: "Печка"
+description: "Больше стекла!"
+outputItem: metaglass/4
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 3
+hasPower: true
+hasItem: true
+craftTime: 70
+health: 1500
+updateEffect: smeltsmoke
+consumes: {
+power: 2.5
+ items: {
+  items: [
+   coal/1
+sand/4
+lead/4
+  ],
+ }
+}
+requirements: [
+ lead/120 
+ silicon/60
+graphite/70
+metaglass/40
+],
+category: crafting
+research: kiln
+idleSound: respawning
+idleSoundVolume: 0.5
+}

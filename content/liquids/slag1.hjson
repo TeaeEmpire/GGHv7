@@ -1,0 +1,10 @@
+name: "Шлак80"
+ description:"Шлак с меньшей температурой который может выделять медь и свинец."
+viscosity: 0.5
+temperature: 0.8
+effect: melting
+color: "#D2691E"
+lightColor: "#D2691E"
+research:{
+parent:factory-pilin
+}

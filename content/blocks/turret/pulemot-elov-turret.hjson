@@ -1,0 +1,55 @@
+{
+    type: itemTurret
+    name: "Желто-чайный пулемёт зенитный"
+    description: "Модификация пулемета для воздушных противников."
+    health: 600
+    size: 2
+    recoil: 3
+	targetAir: true
+	targetGround: false
+    reloadTime: 6.5
+    range: 220
+    inaccuracy: 0
+    rotateSpeed: 10.0
+    ammoTypes: {
+       
+      elov: {
+            speed: 15.0
+            damage: 8
+            reloadMultiplier: 1.0
+             width: 5
+             height: 5
+			 type: FlakBulletType
+           shootEffect: shootSmall
+     smokeEffect: shootSmallSmoke
+            splashDamageRadius: 10
+            splashDamage: 30
+            ammoMultiplier: 12
+            backColor: FF9A00
+            frontColor: FF9A00
+			fragBullets: 10
+			lifetime: 14
+			knockback:0.5
+			fragBullet: {
+type: FlakBulletType
+damage: 60
+speed: 4
+lifetime: 60
+drag: 0.03
+width: 2
+height: 2
+backColor: 7F92FF
+frontColor: 7F92FF
+pierce: true
+homingPower: 0.2
+}
+    }
+	}
+    requirements: [
+       elov/80
+       copper/60
+	   lead/70
+    silicon/50  ]
+    category: turret
+    research: pulemot-elovT2-turret
+}

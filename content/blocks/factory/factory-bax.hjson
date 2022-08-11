@@ -1,0 +1,47 @@
+{
+type: GenericCrafter
+name: "Реактор антиматерии."
+description: "Достает антиматерию из противоположного мира. Требуется большое количество энергии и криогенной жидеости для стабильной работы портала."
+outputItem: bax/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type:  DrawFlame
+}
+]
+}
+size: 3
+hasPower: true
+hasItem: true
+hasLiquids: true
+craftTime: 1200
+health: 4750
+updateEffect: smeltsmoke
+consumes: {
+power: 100
+ liquid:{
+ liquid: cryofluid
+ amount: 5
+ }
+}
+requirements: [
+ copper/1600
+ lead/1500
+ tin/800
+ silicon/4000
+ titanium/600
+ graphite/1000
+ thorium/400
+ surge-alloy/700
+ phase-fabric/800
+],
+category: crafting
+research: StoneMine
+idleSound: respawning
+idleSoundVolume: 0.5
+researchCostMultiplier: 1.5
+}

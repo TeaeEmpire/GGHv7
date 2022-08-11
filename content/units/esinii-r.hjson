@@ -1,0 +1,77 @@
+type: mech
+name: Палач
+description:Мощный меч плавит металл, щит отбрасывающий сильных на метры.
+health: 3600
+speed: 1.0
+range: 80
+mechStepParticles: true
+hitSize: 30
+
+rotateSpeed: 5
+commandLimit: 48
+buildSpeed: 10
+armor:20
+itemCapacity: 0
+speed: 0.7
+research: {
+parent: gryn-r
+requirements: [
+	silicon/20000
+    graphite/17000
+    metaglass/20000
+    titanium/16000
+    esinii/14000
+	]
+}
+canDrown: false
+weapons: [
+{
+  name: esinii-r-weapon
+  x: 17
+  y: 1
+  shootY: 8
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+   bullet: {
+    type: LaserBulletType
+    length: 160
+    damage: 700
+    width: 60
+	status: unmoving
+    lifetime: 40
+    largeHit: true
+    collidesTeam:  true
+    sideAngle: -10
+    sideWidth: -10
+    sideLength: -10
+    colors: [93bbc1, 68a0bf, 348dbc]
+  }
+}
+{
+  name: esinii-rr-weapon
+  x:-15
+  y:11
+  shootY: 3
+  mirror: false
+  reload: 30
+  ejectEffect: none
+  recoil: 1
+  rotate: false
+  shootSound: flame
+  bullet: {
+type: basicBulletType
+width: 10
+height: 4
+shrinkY: 0
+splashDamageRadius: 24
+splashDamage: 45
+speed: 0
+damage: 60
+lifetime: 10
+}
+}
+]
